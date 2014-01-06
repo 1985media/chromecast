@@ -7,10 +7,11 @@ Initialize a Sender
 -------------------
 ```javascript
 var sender = new Chromecast.Sender();
-sender.doLaunch(Chromecast.Sender.receiverList[0], null, 'my description', 'http://myurl.com/', onLaunch);
-	function onLaunch(activity) {
+function onLaunch(activity) {
 	//stuff do do after launch
 };
+
+sender.doLaunch(Chromecast.Sender.receiverList[0], null, 'my description', 'http://myurl.com/', onLaunch);
 ```
 
 Send a message to Receiver from Sender
