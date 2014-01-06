@@ -10,7 +10,6 @@ var sender = new Chromecast.Sender();
 function onLaunch(activity) {
 	//stuff do do after launch
 };
-
 sender.doLaunch(Chromecast.Sender.receiverList[0], null, 'my description', 'http://myurl.com/', onLaunch);
 ```
 
